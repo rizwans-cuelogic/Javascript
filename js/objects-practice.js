@@ -1,4 +1,35 @@
 "use strict";
+//Array
+
+let arr = [1,2,3,4,5,6]
+
+arr.forEach((key)=>{
+    console.log(key);
+})
+
+for(let i = 0 ; i<arr.length;i++){
+    console.log(i);
+}
+
+for(let i of arr){
+    console.log(i);
+}
+
+for(let i in arr){
+    console.log(i);
+}
+
+arr.push(9);
+console.log(arr);
+
+arr.pop();
+console.log(arr);
+
+//array destructuring
+let [i,j] = arr;
+console.log("This is is destructure:",i);
+console.log("This is is destructure:",j);
+
 
 let examplespread = (firstName,...hobbies)=>{
     console.log("Spread Prameters");
